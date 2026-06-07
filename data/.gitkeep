@@ -1,0 +1,11 @@
+Place your welding PDF documents in this folder.
+
+Accepted format : PDF (.pdf)
+Examples        :
+  - AWS_D1.1_Structural_Welding_Code.pdf
+  - Welding_Handbook_Vol1.pdf
+  - MIG_Welding_Reference_Guide.pdf
+
+After adding PDFs either:
+  A) Use the Gradio UI  →  Documents tab  →  Upload PDFs  →  Build Index
+  B) Locally: python -c "from retriever import Retriever; Retriever()"

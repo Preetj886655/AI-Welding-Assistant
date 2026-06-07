@@ -1,0 +1,24 @@
+# ── AI Welding Assistant — Requirements ──────────────────────────────────────
+# Runs on Hugging Face Spaces CPU Basic (free tier).
+# NO local model downloads — all AI calls go through the HF Inference API.
+
+# ── Gradio UI ─────────────────────────────────────────────────────────────────
+gradio>=4.44.0
+
+# ── Hugging Face Inference API ────────────────────────────────────────────────
+huggingface_hub>=0.24.0          # InferenceClient for LLM calls
+
+# ── HTTP (embedding API calls) ────────────────────────────────────────────────
+requests>=2.31.0
+
+# ── Vector Database ───────────────────────────────────────────────────────────
+faiss-cpu>=1.8.0                 # CPU-only; no GPU needed
+
+# ── PDF Parsing ───────────────────────────────────────────────────────────────
+pymupdf>=1.24.0                  # fast PDF text extraction (fitz)
+
+# ── Numerics ──────────────────────────────────────────────────────────────────
+numpy>=1.26.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0             # loads .env for local development

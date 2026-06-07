@@ -1,0 +1,8 @@
+This folder is auto-created at runtime.
+
+Contents after ingestion:
+  index.faiss     — FAISS flat L2 index
+  metadata.pkl    — chunk text + source metadata
+
+Do not delete these files while the app is running.
+To rebuild: use the Gradio UI → Documents → Build Index.
